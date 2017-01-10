@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">通信告警</string>
+    <string name="btn_login">登录</string>
+    <string name="radio_login">记住密码</string>
+    <!-- 头部选择 -->
+    <string-array name="current_title">
+        <item>毅格</item>
+        <item>动环</item>
+        <item>华为</item>
+        <item>UT</item>
+    </string-array>
+    <!-- 登录url -->
+    <string name="login_url">http://139.129.200.127:8080/alarm/sysUser!findLogin.action?</string>
+    <!-- 当前数据请求url -->
+    <string-array name="current_request_urls">
+        <item>http://139.129.200.127:8080/alarm/yGAlarm!findYGAlarmByLatest.action?</item>
+        <item>http://139.129.200.127:8080/alarm/dHAlarm!findDHAlarmByLatest.action?</item>
+        <item>http://139.129.200.127:8080/alarm/hWAlarm!findHWAlarmByLatest.action?</item>
+        <item>http://139.129.200.127:8080/alarm/uTAlarm!findUTAlarmByLatest.action?</item>
+    </string-array>
+    <!-- 历史数据请求url -->
+    <string-array name="historyt_request_urls">
+        <item>http://139.129.200.127:8080/alarm/yGAlarm!findYGAlarmByCondition.action?</item>
+        <item>http://139.129.200.127:8080/alarm/dHAlarm!findDHAlarmByCondition.action?</item>
+        <item>http://139.129.200.127:8080/alarm/hWAlarm!findHWAlarmByCondition.action?</item>
+        <item>http://139.129.200.127:8080/alarm/uTAlarm!findUTAlarmByCondition.action?</item>
+    </string-array>
+    <!-- 数据处理url -->
+    <string-array name="send_urls">
+        <item>http://139.129.200.127:8080/alarm/yGAlarm!alarmrecordByids.action?</item>
+        <item>http://139.129.200.127:8080/alarm/dHAlarm!alarmrecordByids.action?</item>
+        <item>http://139.129.200.127:8080/alarm/hWAlarm!alarmrecordByids.action?</item>
+        <item>http://139.129.200.127:8080/alarm/uTAlarm!alarmrecordByids.action?</item>
+    </string-array>
+    <!-- 报警状态和报警等级查询url -->
+    <string name="level_status_url">http://139.129.200.127:8080/alarm/alarmDictionary!findAlarmDictionaryByCondition.action?</string>
+    <!-- 报警状态和报警等级的类型标签 -->
+    <string-array name="level_status_type">
+        <item>YG</item>
+        <item>DH</item>
+        <item>HW</item>
+        <item>UT</item>
+    </string-array>
+    <!-- 数据统计url -->
+    <string-array name="statistics_url">
+        <item>http://139.129.200.127:8080/alarm/alarmCharts!curAlarmChartsbar.action?</item>
+        <item>http://139.129.200.127:8080/alarm/alarmCharts!AlarmChartByLevel.action?</item>
+        <item>http://139.129.200.127:8080/alarm/alarmCharts!AlarmChartByYearTime.action?</item>
+    </string-array>
+    <string name="user_name">用户  -  %1$s</string>
+    <string name="deptment_name">部门  -  %1$s</string>
+    <!--网络异常  -->
+    <string name="service_error_hint">网络请求失败了，请重试...</string>
+    <string name="service_error_but">点击重试</string>
+</resources>

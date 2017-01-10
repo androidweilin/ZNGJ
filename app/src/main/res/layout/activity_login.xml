@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="@dimen/base1dp"
+        android:layout_height="0dp"
+        android:layout_weight="2"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_launcher"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/base15dp"
+        android:text="通 信 告 警"
+        android:textColor="@color/theme"
+        android:textSize="@dimen/base20sp"/>
+
+    <View
+        android:layout_width="@dimen/base1dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <com.wkbp.zngj.custom.MaterialEditText
+        android:id="@+id/et_userName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/base60dp"
+        android:layout_marginRight="@dimen/base60dp"
+        android:hint="用户名"
+        app:labelColor="#18b4ed"
+        app:labelText="用户名"
+        app:maxLength="16"
+        app:overlengthColor="@android:color/holo_red_light"
+        android:paddingLeft="0dp"
+        app:preLineColor="#18b4ed"
+        android:singleLine="true"
+        android:textSize="@dimen/base18sp"/>
+
+    <com.wkbp.zngj.custom.MaterialEditText
+        android:id="@+id/et_passWord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/base60dp"
+        android:layout_marginRight="@dimen/base60dp"
+        android:hint="密码"
+        android:inputType="textPassword"
+        app:labelColor="#18b4ed"
+        app:labelText="密码"
+        app:maxLength="16"
+        app:overlengthColor="@android:color/holo_red_light"
+        android:paddingLeft="0dp"
+        app:preLineColor="#18b4ed"
+        android:singleLine="true"
+        android:textSize="@dimen/base18sp"/>
+
+
+    <View
+        android:layout_width="@dimen/base1dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base45dp"
+        android:layout_marginLeft="@dimen/base48dp"
+        android:layout_marginRight="@dimen/base48dp"
+        android:background="@drawable/login_btn_shape"
+        android:text="@string/btn_login"
+        android:textColor="@color/white"
+        android:textSize="@dimen/base18sp"/>
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        style="@style/CheckBoxStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/base15dp"
+        android:checked="true"
+        android:text="@string/radio_login"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/base16sp"/>
+
+    <View
+        android:layout_width="@dimen/base1dp"
+        android:layout_height="0dp"
+        android:layout_weight="2"/>
+</LinearLayout>

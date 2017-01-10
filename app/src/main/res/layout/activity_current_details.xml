@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/custom_action_bar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/base10dp"
+        android:paddingLeft="@dimen/base15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设备编号:"
+            android:textStyle="bold"
+            android:textSize="@dimen/base16sp"/>
+
+        <TextView
+            android:id="@+id/tv_equid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base5dp"
+            android:textSize="@dimen/base16sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/base10dp"
+        android:paddingLeft="@dimen/base15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="告警时间:"
+            android:textStyle="bold"
+            android:textSize="@dimen/base16sp"/>
+
+        <TextView
+            android:id="@+id/tv_alarmtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base5dp"
+            android:textSize="@dimen/base16sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/base10dp"
+        android:paddingLeft="@dimen/base15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="告警等级:"
+            android:textStyle="bold"
+            android:textSize="@dimen/base16sp"/>
+
+        <TextView
+            android:id="@+id/tv_alarmlevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base5dp"
+            android:textSize="@dimen/base16sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/base10dp"
+        android:paddingLeft="@dimen/base15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="告警电站:"
+            android:textStyle="bold"
+            android:textSize="@dimen/base16sp"/>
+
+        <TextView
+            android:id="@+id/tv_stationname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base5dp"
+            android:textSize="@dimen/base16sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/base10dp"
+        android:paddingLeft="@dimen/base15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="告警状态:"
+            android:textStyle="bold"
+            android:textSize="@dimen/base16sp"/>
+
+        <TextView
+            android:id="@+id/tv_alarmstatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base5dp"
+            android:textSize="@dimen/base16sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/base10dp"
+        android:paddingLeft="@dimen/base15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="告警地点:"
+            android:textStyle="bold"
+            android:textSize="@dimen/base16sp"/>
+
+        <TextView
+            android:id="@+id/tv_alarmlocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base5dp"
+            android:textSize="@dimen/base16sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/base10dp"
+        android:paddingLeft="@dimen/base15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="告警信息:"
+            android:textStyle="bold"
+            android:textSize="@dimen/base16sp"/>
+
+        <TextView
+            android:id="@+id/tv_alarminfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base5dp"
+            android:textSize="@dimen/base16sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/base10dp"
+        android:paddingLeft="@dimen/base15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="告警数值:"
+            android:textStyle="bold"
+            android:textSize="@dimen/base16sp"/>
+
+        <TextView
+            android:id="@+id/tv_alarmvalue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base5dp"
+            android:textSize="@dimen/base16sp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/tv_send"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base45dp"
+        android:textSize="@dimen/base18sp"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/base20dp"
+        android:layout_marginRight="@dimen/base20dp"
+        android:layout_marginBottom="@dimen/base20dp"
+        android:background="@drawable/current_tv_shape"
+        android:textColor="@color/white"
+        android:text="处理"/>
+</LinearLayout>

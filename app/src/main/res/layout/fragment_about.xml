@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/base50dp"
+        android:text="用户"
+        android:textSize="@dimen/base18sp"/>
+
+    <TextView
+        android:id="@+id/deptment_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/base30dp"
+        android:text="部门"
+        android:textSize="@dimen/base18sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/btn_exit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base45dp"
+        android:layout_marginBottom="@dimen/base40dp"
+        android:layout_marginLeft="@dimen/base20dp"
+        android:layout_marginRight="@dimen/base20dp"
+        android:background="@drawable/login_btn_shape"
+        android:textColor="@color/white"
+        android:textSize="@dimen/base18sp"
+        android:text="注销用户"/>
+</LinearLayout>

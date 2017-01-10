@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffff</color>
+    <!-- 白色 -->
+    <color name="transparent">#0000</color>
+    <!-- 透明 -->
+    <color name="theme">#202020</color>
+    <color name="bule">#01ADFF</color>
+    <color name="F4">#f4f4f4</color>
+    <color name="gray">#a9a9a9</color>
+</resources>
